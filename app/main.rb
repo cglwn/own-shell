@@ -1,6 +1,8 @@
-$stdout.write("$ ")
+while true
+  $stdout.write("$ ")
 
-# Wait for user input
-command, *args = gets.chomp.split(" ")
+  # Wait for user input
+  command, *args = gets.chomp.split(" ")
 
-puts "#{command}: command not found"
+  puts "#{command}: command not found"
+end
