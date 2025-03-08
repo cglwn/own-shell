@@ -4,9 +4,13 @@ while true
   # Wait for user input
   command, *args = gets.chomp.split(" ")
 
-  if command == "exit"
+  case command
+  when "exit"
     exit(Integer(args[0]))
+  when "echo"
+    puts args.join(" ")
+  else
+    puts "#{command}: command not found"
   end
 
-  puts "#{command}: command not found"
 end
